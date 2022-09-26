@@ -57,7 +57,7 @@ export const main = Reach.App(() => {
 
 
   Buyer.only(() => {
-    const description = declassify(interact.getDescription)
+    const description = declassify(interact.getDescription())
   })
   Buyer.publish(description)
   commit()
